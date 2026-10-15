@@ -1,4 +1,3 @@
-
 ifeq ($(BUILD_INNER),1)
 
 TARGET = EBOOT
@@ -6,7 +5,7 @@ OBJS = main.o
 VPATH = ../src
 
 CFLAGS = -O2 -G0 -Wall -Wextra
-LIBS = -lpspgu
+LIBS = -lpspgu -lpspaudio -lm
 
 EXTRA_TARGETS = EBOOT.PBP
 PSP_EBOOT_TITLE = Pocket Jumper
